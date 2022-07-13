@@ -2,15 +2,14 @@
 
 namespace ZnCore\EventDispatcher\Libs;
 
-use ZnCore\Container\Libs\Container;
 use Psr\Container\ContainerInterface;
 use Psr\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnCore\Instance\Libs\Resolvers\InstanceResolver;
+use ZnCore\Container\Libs\Container;
 use ZnCore\Container\Traits\ContainerAwareTrait;
 use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
 use ZnCore\EventDispatcher\Traits\EventDispatcherTrait;
+use ZnCore\Instance\Helpers\ClassHelper;
 
 class EventDispatcherConfigurator implements EventDispatcherConfiguratorInterface
 {
